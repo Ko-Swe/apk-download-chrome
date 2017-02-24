@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Options - APK Downloader</title>
+  <link rel="stylesheet" href="css/pure-min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/pages.css" type="text/css" media="all" />
+  <meta charset="utf-8" />
+</head>
+
+<body>
+
+<div class="content page-options">
+  <div class="header">
+    <h1>Device Info</h1>
+  </div>
+
+  <section class="section-info">
+    <form class="pure-form pure-form-aligned">
+      <fieldset>
+        <div class="pure-control-group">
+          <label>Email</label>
+          <span class="value" id="txt-email"></span>
+        </div>
+        <div class="pure-control-group">
+          <label>Android/GSF ID</label>
+          <span class="value" id="txt-gsf-id"></span>
+        </div>
+
+        <div class="pure-controls">
+          <a id="btn-advanced">Advanced Settings</a>
+        </div>
+
+        <section class="section-advanced hidden">
+          <form class="pure-form pure-form-aligned">
+            <fieldset>
+              <div class="pure-control-group">
+                <label>Android Version</label>
+                <select id="slt-android-versions"></select>
+                <a class="btn-help">Help</a>
+                <div class="help-msg hidden">
+                  <p>Some apps provide different APK depend on Android version, so it's recommended to select the current Android version of your Android device.</p>
+                </div>
+              </div>
+              <div class="pure-control-group">
+                <label>Device Type</label>
+                <select id="slt-android-devices"></select>
+                <a class="btn-help">Help</a>
+                <div class="help-msg hidden">
+                  <p>
+                    Change this if you have problem downloading some apps (not 100% work).
+                    <br />
+                    If your device isn't in this list, select "Custom" and enter your device's codename manually, or select a device that has similiar specs to yours.
+                  </p>
+                </div>
+              </div>
+              <div class="pure-control-group hidden" id="row-device-codename">
+                <label>Device Codename</label>
+                <input type="text" id="inp-device-codename" />
+                <a class="btn-help">Help</a>
+                <div class="help-msg hidden">
+                  <p>
+                    Please enter the codename showed in the Device ID app.
+                    <br />
+                    Also you can enter codename of any device. For more device codenames, please view <a target="_blank" href="http://codekiem.com/android-device-codenames">this post</a>. Since this list is incomplete, it's fine if your device isn't in it. You still can use it anyway.
+                  </p>
+                </div>
+              </div>
+
+              <div class="buttons">
+                <button id="btn-save" class="pure-button pure-button-primary">Save</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+
+        <div class="buttons">
+          <button id="btn-logout" class="pure-button">Logout</button>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+
+  <div class="footer">
+    <ul class="left">
+      <li><a href="https://play.google.com/store" target="_blank">open play store</a></li>
+    </ul>
+    <ul class="right">
+      <li><a href="http://android-apk-downloader.com" target="_blank">homepage</a></li>
+      <li><a href="mailto:redphoenix89+apk@gmail.com" target="_blank">contact</a></li>
+      <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=redphoenix89%40gmail%2ecom&amp;lc=US&amp;item_name=APK%20Downloader&amp;item_number=apk%2ddownloader&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted" target="_blank">
+        buy me a coffee 😊
+      </a></li>
+    </ul>
+  </div>
+</div>
+<script src="js/browser_support.js"></script><script src="js/utils.js"></script><script src="js/options.js"></script>
+</body>
+</html>

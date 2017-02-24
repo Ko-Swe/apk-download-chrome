@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - APK Downloader</title>
+  <link rel="stylesheet" href="css/pure-min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/pages.css" type="text/css" media="all" />
+  <meta charset="utf-8" />
+</head>
+
+<body>
+
+<div class="content page-login">
+  <div class="header">
+    <h1>Login</h1>
+  </div>
+
+  <section class="section-guides">
+    <p>We need your account info and an Android/GSF ID to simulate the download request and send it to Google Play Store's Server. If you don't have any devices meet that the requirement, <a target="_blank" href="mailto:redphoenix89+apk@gmail.com?subject=GSF ID for APK Downloader">email me</a> (and skip all these steps below).</p>
+    <div class="step">
+      <span>1</span>
+      Prepare an Android device <strong class="highlight">with Google Play app installed</strong> (or you won't be able to download apps).
+    </div>
+
+    <div class="step">
+      <span>2</span>
+      Install <strong><a href="https://play.google.com/store/apps/details?id=com.redphx.deviceid" target="_blank">Device ID</a></strong> (<a href="http://codekiem.com/apk-downloader/device-id" target="_blank">mirror</a>) on that Android device. This app will show necessary information for you to use on APK Downloader.
+    </div>
+
+    <div class="step">
+      <span>3</span>
+      Log in to APK Downloader using the information showed in Device ID app.
+    </div>
+  </section>
+
+  <section class="section-login">
+    <form class="pure-form pure-form-aligned">
+      <fieldset>
+        <div class="pure-control-group">
+          <label>Email</label>
+          <input type="email" id="inp-email" class="input" value="" size="20" tabindex="10" placeholder="your.email@gmail.com" />
+
+          <a class="btn-help">Help</a>
+          <div class="help-msg hidden">
+            <p>Enter your email showed in the Device ID app. Do not log in with another email, or it won't work.</p>
+          </div>
+        </div>
+
+        <div class="pure-control-group">
+          <label>Password</label>
+          <input type="password" id="inp-password" class="input" value="" size="20" tabindex="11" placeholder="your password" />
+          <a class="btn-help">Help</a>
+          <div class="help-msg hidden">
+            <p>
+              This password is used once to retrieve an authentication token and is not stored.
+              <br />
+              <strong>2-step verification</strong> is not supported. If you're using it, please use <a href="https://support.google.com/mail/answer/1173270" target="_blank">Application-specific password</a> instead.
+              <br />
+              <strong class="highlight">Note:</strong> If you entered correct email and password but still couldn't log in, please turn on <a href="https://www.google.com/settings/security/lesssecureapps" target="_blank">Access for less secure apps</a> setting and try again.
+            </p>
+          </div>
+        </div>
+
+        <div class="pure-control-group">
+          <label>Android/GSF ID</label>
+          <input type="text" id="inp-gsf-id" value="" maxlength="16" class="input" value="" size="20" tabindex="12" pattern="[0-9a-fA-F]{16}" placeholder="0123456789ABCDEF" />
+          <a class="btn-help">Help</a>
+          <div class="help-msg hidden">
+            <p>16 hex characters. Make sure you entered it correctly, or you won't be able to download APK files.</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id="btn-login" tabindex="13" class="pure-button pure-button-primary">Log in</button>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+
+  <div class="footer">
+    <ul class="right">
+      <li><a href="http://android-apk-downloader.com" target="_blank">homepage</a></li>
+      <li><a href="mailto:redphoenix89+apk@gmail.com" target="_blank">contact</a></li>
+    </ul>
+  </div>
+</div>
+<script src="js/browser_support.js"></script><script src="js/utils.js"></script><script src="js/login.js"></script>
+
+</body>
+</html>

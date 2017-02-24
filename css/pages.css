@@ -1,0 +1,111 @@
+a {
+  color: #689f38;
+  text-decoration: none;
+  font-weight: 200; }
+  a:hover {
+    color: #F05200; }
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 600px; }
+
+.header {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 0.05em; }
+  .header h1 {
+    font-size: 320%;
+    font-weight: 100;
+    margin: 0.4em; }
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 4px;
+  font-size: 14px;
+  background-color: #F5F5F5;
+  font-weight: 200; }
+  .footer ul.left {
+    float: left; }
+  .footer ul.right {
+    float: right; }
+  .footer ul li {
+    padding-right: 16px;
+    display: inline-block;
+    list-style-type: none; }
+  .footer .version {
+    float: left;
+    padding-left: 20px;
+    color: #B8B8B8; }
+
+.page-options, .page-login {
+  font-size: 16px;
+  margin-bottom: 100px; }
+  .page-options .buttons, .page-login .buttons {
+    margin-top: 30px;
+    text-align: center; }
+  .page-options .input, .page-login .input {
+    width: 300px; }
+
+.page-options section.section-info .value {
+  font-weight: bold; }
+.page-options section.section-advanced {
+  /*display: none;*/
+  background-color: #eee;
+  padding: 10px 0px;
+  border-radius: 5px; }
+.page-options section #btn-advanced {
+  cursor: pointer; }
+.page-options .notice {
+  padding: 15px;
+  background-color: #F9F9F9;
+  border-radius: 4px;
+  margin-top: 10px; }
+
+.page-login .section-guides {
+  background-color: #F3F3F3;
+  padding: 2px 20px;
+  margin-bottom: 15px;
+  border-radius: 4px; }
+  .page-login .section-guides .step {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px 0px; }
+    .page-login .section-guides .step span {
+      font-size: 14px;
+      border-radius: 20px;
+      background-color: #EF7023;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: white; }
+
+.btn-help {
+  cursor: help; }
+
+.help-msg {
+  left: 0px;
+  position: relative;
+  height: 0px;
+  margin: 0px; }
+  .help-msg a {
+    color: #FFEB3B; }
+    .help-msg a:hover {
+      color: #FFC107; }
+  .help-msg p {
+    position: absolute;
+    background: #616161;
+    padding: 1em;
+    margin: 10px;
+    border-radius: 4px;
+    color: #FFF; }
+
+input:focus + .help-msg, select:focus + .help-msg {
+  display: block; }

@@ -1,0 +1,48 @@
+{
+  "name": "APK Downloader",
+  "description": "Download free APK files from Google Play Store (Android Market)",
+  "version": "2.1.9",
+  "author": "redphx",
+  "manifest_version": 2,
+  "icons": {
+    "16": "img/icon_16.png",
+    "48": "img/icon_48.png",
+    "128": "img/icon_128.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "js/jsxcompressor.min.js",
+      "js/browser_support.js",
+      "js/protocol.js",
+      "js/background.js"
+    ]
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://play.google.com/store*"
+      ],
+      "run_at": "document_end",
+      "js": ["js/browser_support.js", "js/content_scripts.js"]
+    }
+  ],
+  "permissions": [
+    "cookies",
+    "storage",
+    "downloads",
+    "*://*.codekiem.com/apk-downloader/*",
+    "https://www.google.com/accounts/ClientLogin",
+    "*://android.clients.google.com/*",
+    "*://*.android.clients.google.com/*",
+    "*://play.google.com/store*",
+    "*://*.gvt1.com/*"
+  ],
+
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkC4TsLfo8MJ7TvvxKDkLldd4EJtz9FZo8KbHunZl55SquMPLVCw3U04eS6Om2c8OITTkz6vh/+t5KvlLXsPXHphCFryklKZV2mg3/2ayFOy4bqyX5TkxhSBtyreDLKSEKEIcgWI2KQsIuE4f68JJ9yv3FnOIeSxFBQ+rUbcuQoxv2+rw/8mcHQIbrhSkv6hC02Xg/5sd2XzASIEcWYvySSDkaLgKz3BWI3nqOazWQGJPH3P+8sjRSsX9H2silaOYnMgEI5A7+bEvzb1H+iB5FNLEPp+9u4tyXyMj7KjhYy0CHuXHXgM7Hx8r/9c1MZHBFTloGjKRTmFR5MB7jXC/2wIDAQAB",
+
+  "web_accessible_resources": [
+    "img/*"
+  ]
+}
